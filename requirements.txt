@@ -1,0 +1,4 @@
+# Round 8: tested with Python 3.10.11
+gymnasium==1.4.0
+numpy==2.2.6
+pygame==2.6.1

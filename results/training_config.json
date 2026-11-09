@@ -1,0 +1,153 @@
+{
+  "algorithm": "Q-learning",
+  "parameters": {
+    "episodes": 3000,
+    "max_steps": 100,
+    "seed": 42,
+    "alpha": 0.1,
+    "gamma": 0.9,
+    "epsilon_start": 1.0,
+    "epsilon_min": 0.05,
+    "epsilon_decay": 0.995
+  },
+  "map_path": "D:\\major_lessons\\Introduction to AI\\2024011761_xzh_Astar_research\\project\\maps\\demo.json",
+  "map": {
+    "grid": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "start": [
+      0,
+      0
+    ],
+    "goal": [
+      4,
+      4
+    ]
+  },
+  "actions": [
+    "UP",
+    "RIGHT",
+    "DOWN",
+    "LEFT"
+  ],
+  "rewards": {
+    "step": -1.0,
+    "goal": 10.0
+  },
+  "versions": {
+    "python": "3.10.11",
+    "numpy": "2.2.6",
+    "gymnasium": "1.4.0"
+  },
+  "epsilon_schedule": "record before each episode; decay after episode with minimum floor",
+  "truncation_bootstrap": true,
+  "summary": {
+    "training_successes": 2992,
+    "episodes": 3000,
+    "final_window": 100,
+    "final_window_success_rate": 1.0,
+    "mean_total_reward": 1.0776666666666668,
+    "mean_steps": 9.893,
+    "final_epsilon": 0.05
+  },
+  "evaluation": {
+    "success": true,
+    "trajectory": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "states": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      9,
+      14,
+      19,
+      24
+    ],
+    "actions": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "total_reward": 3.0,
+    "steps": 8,
+    "terminated": true,
+    "truncated": false
+  }
+}
