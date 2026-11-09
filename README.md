@@ -1,3 +1,5 @@
+<img width="447" height="153" alt="image" src="https://github.com/user-attachments/assets/be488f85-20f1-4f05-86fe-c206fc6fb112" />
+
 # GridWorld Lab
 
 Toy 级课程实践：BFS、Dijkstra、Greedy、A* 四/八方向与已训练 Q-learning 的统一回放。窗口 1200×780，深色网格，不依赖外部图片。界面使用英文短标签。
